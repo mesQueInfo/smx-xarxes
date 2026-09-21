@@ -1,5 +1,5 @@
 # 🛠️ FITXA DE TREBALL: SESSIÓ 3
-**Unitat Operativa:** NetWorking Solutions | **Mòdul:** MP05  
+**Unitat Operativa:** NetWorking Solutions | **Mòdul:** 0225  
 **Alumnat / Equip:** ____________________________________ **Data:** ____________
 
 ---
@@ -34,7 +34,7 @@ Simular el viatge d'una petició web (`HTTP GET /index.html`) des del vostre ord
 
 ---
 
-### ✍️ Preguntes de Consolidació (Taller 0.2A)
+### ✍️ Preguntes de Consolidació (Taller 1)
 *Respon aquestes qüestions per adjuntar al teu Diari del Tècnic:*
 
 1. **Desencapsulació:** Quan el servidor rep el sobre físic, en quin ordre va obrir els sobres i quina informació comprova primer?  
