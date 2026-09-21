@@ -15,7 +15,7 @@
 
 ## Activitats
 
-[Sessió 3: Arquitectura i elements de la xarxa](BL1-Sessio 3-Arquitectura-elements-xarxa.md)
+[Sessió 3: Arquitectura i elements de la xarxa](BL1-Sessio3-Arquitectura-elements-xarxa.md)
 ---
 
 ## 1. Definició i tipus de xarxes
