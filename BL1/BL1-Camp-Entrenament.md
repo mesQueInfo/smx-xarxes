@@ -13,6 +13,9 @@
 7. [Normativa legal i tècnica](#7-normativa-legal-i-tècnica-dimplantació-de-xarxes-locals)
 8. [Documentació tècnica](#8-documentació-tècnica)
 
+## Activitats
+
+[Sessió 3: Arquitectura i elements de la xarxa](BL1-Sessio 3-Arquitectura-elements-xarxa.md)
 ---
 
 ## 1. Definició i tipus de xarxes
