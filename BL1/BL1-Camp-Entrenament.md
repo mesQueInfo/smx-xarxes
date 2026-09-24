@@ -9,9 +9,10 @@
 3. [Elements d'una xarxa](#3-definició-característiques-i-funcionalitats-associades-als-elements-duna-xarxa)
 4. [Mitjans de transmissió: cables i sense fils](#4-mitjans-de-transmissió-cables-i-sense-fils)
 5. [Mapa físic i lògic d'una xarxa local](#5-definicions-de-mapa-físic-i-lògic-duna-xarxa-local)
-6. [Estructures alternatives](#6-estructures-alternatives)
-7. [Normativa legal i tècnica](#7-normativa-legal-i-tècnica-dimplantació-de-xarxes-locals)
-8. [Documentació tècnica](#8-documentació-tècnica)
+6. [Topologies físiques i lògiques](#6-estructures-alternatives)
+7. [Estructures alternatives](#7-estructures-alternatives)
+8. [Normativa legal i tècnica](#8-normativa-legal-i-tècnica-dimplantació-de-xarxes-locals)
+9. [Documentació tècnica](#9-documentació-tècnica)
 
 ## Activitats
 
@@ -444,7 +445,7 @@ Representa l'estructura lògica de la xarxa: adreces IP, adreces MAC, noms dels 
 
 ![Exemple de xarxa d'una empresa comercial amb switch, firewall, servidor NAS i Wi-Fi](images/34-xarxa-comercial-exemple.jpg)
 
-### Topologies de xarxes locals: físiques i lògiques
+## 6. Topologies de xarxes locals: físiques i lògiques
 
 La topologia defineix l'estructura de la xarxa:
 
@@ -496,13 +497,13 @@ Defineix el mètode que utilitzen els hosts per comunicar-se:
 
 ---
 
-## 6. Estructures alternatives
+## 7. Estructures alternatives
 
 Quan una xarxa combina diverses topologies, es parla de **xarxa mixta** o **topologia híbrida**. És l'esquema més habitual en xarxes reals d'una certa mida (per exemple, estrella estesa combinada amb un nucli en malla parcial per redundància).
 
 ---
 
-## 7. Normativa legal i tècnica d'implantació de xarxes locals
+## 8. Normativa legal i tècnica d'implantació de xarxes locals
 
 ### Estàndards de xarxa
 
@@ -533,7 +534,7 @@ Un **estàndard** és un model o patró perquè diferents fabricants el segueixi
 
 ---
 
-## 8. Documentació tècnica
+## 9. Documentació tècnica
 
 Davant qualsevol problema, canvi o millora, cal tenir documentat correctament el sistema amb la informació més actualitzada possible. Documents imprescindibles:
 
