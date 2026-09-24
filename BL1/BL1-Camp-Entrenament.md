@@ -1,4 +1,4 @@
-# TEORIA BL1 — El Camp d'entrenament
+# TEORIA BL1. El Camp d'entrenament
 
 **CFGM SMX · 0225 Xarxes Locals**
 
