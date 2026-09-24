@@ -16,7 +16,6 @@
 ## Activitats
 
 [Sessió 3: Arquitectura i elements de la xarxa](BL1-Sessio3-Arquitectura-elements-xarxa.md)
-[Sessió 4: Arquitectura i elements de la xarxa](BL1-Sessio4-Arquitectura-elements-xarxa.md)
 ***
 
 ## 1. Definició i tipus de xarxes
@@ -136,9 +135,9 @@ Quan un usuari transmet dades a un destí, el sistema de xarxa afegeix informaci
 
 | Capa | Nom | Funció principal |
 |---|---|---|
-| 7 | Aplicació | Interactua amb l'usuari final: HTTP/HTTPS, DNS, correu (SMTP/IMAP), FTP/SFTP, etc. |
-| 6 | Presentació | Format, xifratge i compressió de les dades (TLS, JPEG, etc.). |
-| 5 | Sessió | Estableix, manté i finalitza sessions entre aplicacions. |
+| 7 | Aplicació | Interactua amb l'usuari final: HTTP/HTTPS, DNS, correu (SMTP/IMAP), FTP/SFTP, serveis d'impressió, etc. |
+| 6 | Presentació | Format, xifratge i compressió de les dades (TLS, JPEG, ASCII, etc.). |
+| 5 | Sessió | Estableix, manté i finalitza sessions i diàlegs entre aplicacions. |
 | 4 | Transport | Comunicació extrem a extrem: TCP, UDP, QUIC. Ports. |
 | 3 | Xarxa | Adreçament lògic (IP) i encaminament (routers). |
 | 2 | Enllaç de dades | Trames, adreçament físic (MAC), control d'errors i de flux. |
@@ -146,19 +145,19 @@ Quan un usuari transmet dades a un destí, el sistema de xarxa afegeix informaci
 
 ![Les 7 capes del model OSI, de la capa física a la d'aplicació](images/08-osi-7-capes.jpg)
 
-**1. Capa física** — medis de transmissió, cablejat i connectors, espectre electromagnètic, multiplexació, dispositius com targetes de xarxa i concentradors.
+**1. Capa física** — medis de transmissió, cablejat i connectors, espectre electromagnètic, multiplexació, dispositius com targetes de xarxa (part física) i concentradors.
 
-**2. Capa d'enllaç** — sincronització emissor/receptor, estructuració en trames, control d'errors i de flux.
+**2. Capa d'enllaç** — sincronització emissor/receptor, estructuració en trames, adreçament MAC, control d'errors i de flux.
 
 **3. Capa de xarxa** — adreçament lògic (IP), mida dels paquets, mode datagrama o circuit virtual, encaminament (routers).
 
 **4. Capa de transport** — comunicació extrem a extrem entre aplicacions, independent de les màquines intermèdies. Protocols principals: **TCP** (fiable, orientat a connexió) i **UDP** (no fiable, sense connexió). Es defineixen els **ports** per identificar les aplicacions. *(Cal afegir-hi també **QUIC**, el protocol de transport modern sobre UDP que fa servir HTTP/3.)*
 
-**5. Capa de sessió** — estableix, manté i finalitza sessions d'usuari. Exemple: una consulta web anònima. Protocols com **TLS** (successor de SSL, ja obsolet i insegur) permeten sessions xifrades i autenticades.
+**5. Capa de sessió** — estableix, manté i gestiona el diàleg i les sessions entre aplicacions d'usuari.
 
-**6. Capa de presentació** — format de les dades, xifratge, compressió.
+**6. Capa de presentació** — format de les dades, representació i codificació, xifratge (protocols com **TLS**, successor de SSL, que permeten comunicacions xifrades) i compressió.
 
-**7. Capa d'aplicació** — transferència de fitxers, correu electrònic, navegació web, accés a bases de dades.
+**7. Capa d'aplicació** — transferència de fitxers, correu electrònic, navegació web, accés a bases de dades i serveis en xarxa com la impressió (IPP, LPD/LPR, SMB).
 
 ### Encapsulació de les dades
 
@@ -207,9 +206,9 @@ Encapsulació en TCP/IP:
 
 Protocols habituals per capa en la pila TCP/IP:
 
-- **Aplicació**: HTTP/HTTPS, DNS, SMTP/IMAP/POP3, SSH, FTP/SFTP.
+- **Aplicació**: HTTP/HTTPS, DNS, SMTP/IMAP/POP3, SSH, FTP/SFTP, IPP, LPD.
 - **Transport**: TCP, UDP, QUIC.
-- **Internet**: IP (IPv4 i, cada cop més, **IPv6**), ARP, ICMP, IGMP.
+- **Internet**: IP (IPv4 i **IPv6**), ICMP, IGMP, i **ARP** (protocol de resolució d'adreces que opera en la interfície entre la capa d'accés a la xarxa/enllaç i la capa d'Internet).
 - **Accés a la xarxa**: Ethernet, Wi-Fi (802.11), *Token Ring* i *ATM* (aquests dos, avui pràcticament en desús).
 
 ![Model OSI, model TCP/IP i el conjunt de protocols TCP/IP (HTTP, SMTP, FTP, DNS, TCP, UDP, IP, Ethernet...)](images/12-tcpip-protocol-suite.png)
@@ -222,7 +221,7 @@ Protocols habituals per capa en la pila TCP/IP:
 
 ### Targeta de xarxa o NIC (capa 1/2)
 
-També anomenada *Network Interface Card* (NIC), és el dispositiu que permet a un ordinador connectar-se a una xarxa: per cable (Ethernet) o sense fils (Wi-Fi). Pot estar integrada a la placa base, en una ranura d'expansió o ser externa (USB).
+També anomenada *Network Interface Card* (NIC), és el dispositiu que permet a un ordinador connectar-se a una xarxa: per cable (Ethernet) o sense fils (Wi-Fi). Opera entre les **capes 1 i 2**: realitza la conversió del senyal físic (capa 1) i la gestió de l'adreça MAC i l'empaquetat en trames (capa 2). Pot estar integrada a la placa base, en una ranura d'expansió o ser externa (USB).
 
 A l'hora d'escollir una targeta, cal fixar-se en:
 
@@ -249,9 +248,9 @@ Dispositiu que interconnectava ordinadors reenviant cada paquet rebut a **tots**
 
 ![Exemple d'un switch de 24 ports Fast Ethernet](images/16-switch-generic.jpg)
 
-### Servidor d'impressió o *print server* (capa 1)
+### Servidor d'impressió o *print server* (capa 7)
 
-Dispositiu que permet connectar una impressora a la xarxa mitjançant cable o Wi-Fi, assignant-li una adreça IP pròpia. Avui en dia, la majoria d'impressores incorporen aquesta funcionalitat de fàbrica (targeta de xarxa i/o Wi-Fi integrats), fent innecessari un dispositiu extern en la majoria de casos.
+Dispositiu o servei que gestiona les cues d'impressió i permet connectar una impressora a la xarxa mitjançant cable o Wi-Fi, assignant-li una adreça IP pròpia. Com a servei final d'usuari i gestor de protocols d'impressió (LPD, IPP, SMB), actua a la **capa d'aplicació (Capa 7)** del model OSI. Avui en dia, la majoria d'impressores incorporen aquesta funcionalitat de fàbrica (targeta de xarxa i/o Wi-Fi integrats), fent innecessari un dispositiu extern en la majoria de casos.
 
 ![Servidor d'impressió sense fils, que dona una adreça IP pròpia a la impressora](images/17-print-server.jpg)
 ![Targeta de xarxa sense fils utilitzada com a exemple de servidor d'impressió](images/18-nic-wifi-2.jpg)
@@ -288,14 +287,14 @@ Dispositiu que recull el senyal sense fils dels dispositius Wi-Fi i el transform
 
 ![Punt d'accés Wi-Fi amb antenes externes i font d'alimentació](images/22-access-point.jpg)
 
-### Mòdem (capa 1/2) — **ús molt reduït**
+### Mòdem (capa 1/2) — **ús reduït com a element aïllat**
 
-Dispositiu que convertia senyals digitals en analògiques (i viceversa) per transmetre dades per la línia telefònica ("modular"/"demodular"). Els mòdems ADSL ja treballaven directament sobre línies digitals.
+Dispositiu que converteix senyals digitals en analògics/físics (i viceversa) per transmetre dades per una línia de comunicació ("modular"/"demodular") a la capa 1, i estructurar les trames del protocol d'accés a la capa 2.
 
 ![Connectors RJ-11, utilitzats per connectar mòdems a la línia telefònica](images/23-rj11-connector.png)
 ![Exemple d'un mòdem extern per a línia telefònica](images/24-modem-foto.png)
 
-> **Actualització important:** l'ADSL i els mòdems tradicionals estan **en clara decadència**, substituïts majoritàriament per **fibra òptica fins a la llar (FTTH)** i, en zones rurals o com a alternativa, per **connexions 4G/5G**. El terme "mòdem" es manté d'ús comú per referir-se al dispositiu ONT/router que dona accés a Internet, encara que tècnicament ja no faci una modulació/demodulació analògica.
+> **Nota d'actualització:** El procés pur de modulació/demodulació actua a les capes 1 i 2. No obstant això, els dispositius comercials domèstics proporcionats pels operadors (ISP) anomenats habitualment "mòdems" o "mòdems de fibra" són en realitat **gateways o equips multifunció** que integren la part d'ONT/módem (capa 1/2), un switch (capa 2), un punt d'accés Wi-Fi (capa 2) i un **router (capa 3)** encarregat de l'adreçament IP i la traducció NAT.
 
 ### Router (capa 3)
 
@@ -399,8 +398,6 @@ BW = 1 Gbps = 1.000.000.000 bps
 
 T = S / BW = 167.772.160 / 1.000.000.000 ≈ 0,168 s
 ```
-
-> *(Nota: l'exemple original de l'apunt feia servir "Fast Ethernet (200 Mbps)", però Fast Ethernet correspon en realitat a 100 Mbps. S'ha corregit l'exemple utilitzant Gigabit Ethernet (1.000 Mbps) com a referència més realista i actual.)*
 
 ---
 
