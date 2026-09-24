@@ -1,3 +1,5 @@
+# TEORIA [BL1. El Camp d'entrenament](BL1-Camp-Entrenament.md)
+
 # SESSIÓ 4
 
 **Títol:** Diagnòstic d'Incidències per Capes i Procés d'Encapsulació, Desencapsulació i Estructura de les PDU
