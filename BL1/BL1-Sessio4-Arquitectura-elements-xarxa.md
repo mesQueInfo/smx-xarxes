@@ -11,7 +11,7 @@
 | 7 | Aplicació | Aplicació | **Dades** | Protocol d'aplicació (HTTP, SSH, DNS...) |
 | 6 | Presentació | Aplicació | **Dades** | Format i xifrat (SSL/TLS, ASCII...) |
 | 5 | Sessió | Aplicació | **Dades** | Gestió de diàleg i connexió (RPC, SQL) |
-| 4 | Transport | Transport | **Segment** | Ports origen i destinació (TCP / UDP) |
+| 4 | Transport | Transport | **Segment** (TCP) **Datagrama** (UDP) | Ports origen i destinació (TCP / UDP) |
 | 3 | Xarxa | Internet | **Paquet** | Adreces IP origen i destinació |
 | 2 | Enllaç de dades | Accés a la xarxa | **Trama** | Adreces MAC origen i destinació |
 | 1 | Física | Accés a la xarxa | **Bits** | Senyals elèctrics, òptics o ones |
