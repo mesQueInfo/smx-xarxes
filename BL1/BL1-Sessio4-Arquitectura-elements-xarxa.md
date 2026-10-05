@@ -154,6 +154,8 @@
 
 ☐ Hub &nbsp;&nbsp;&nbsp;&nbsp; ☐ Switch capa 2 &nbsp;&nbsp;&nbsp;&nbsp; ☐ Router
 
-**3. Quan el paquet surt de la xarxa local cap a Internet a través del router, quines adreces canvien a la trama de capa 2?**
+
+**3. Una xarxa local està composta per varis segments de xarxa. Els segments estan units per mitjà d’un dispositiu d’interconnexió. Un host de la xarxa està infectada per un virus de tipus cuc i està generant molt trànsit Ethernet en el segment de xarxa en el què està el host infectat. Passa aquest trànsit d’un segment a un altre si el dispositiu d’interconnexió és un concentrador? I si fos un repetidor?**
+
 
 ```

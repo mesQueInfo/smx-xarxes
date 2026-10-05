@@ -497,7 +497,7 @@ Defineix el mètode que utilitzen els hosts per comunicar-se:
 
 ---
 
-## 7. Estructures alternatives
+### Estructures alternatives
 
 Quan una xarxa combina diverses topologies, es parla de **xarxa mixta** o **topologia híbrida**. És l'esquema més habitual en xarxes reals d'una certa mida (per exemple, estrella estesa combinada amb un nucli en malla parcial per redundància).
 
