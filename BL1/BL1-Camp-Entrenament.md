@@ -18,6 +18,8 @@
 
 - [Sessió 3: Arquitectura i elements de la xarxa](BL1-Sessio3-Arquitectura-elements-xarxa.md)
 - [Sessió 4: Arquitectura i elements de la xarxa](BL1-Sessio4-Arquitectura-elements-xarxa.md)
+- [Sessió 8: Mitjans de transmissió](BL1-Sessio8-Mitjans.md)
+- [Sessió 8: Topologies](BL1-Sessio8-Topologies.md)
 ***
 
 ## 1. Definició i tipus de xarxes
