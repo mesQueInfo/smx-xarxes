@@ -1,4 +1,4 @@
-# TEORIA BL2. A1 - Medis de transmissió i rosetes
+# BL2. A1 - Medis de transmissió i rosetes
 
 # SESSIÓ 11: Seguretat i gestió ambiental
 ---
