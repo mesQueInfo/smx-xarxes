@@ -5,6 +5,6 @@
 
 ## Índex
 
-# A1 - Medis de transmissió i rosetes
+### A1 - Medis de transmissió i rosetes
 1. [Sessió 11: Seguretat i gestió ambiental](BL2-Sessio11-Seguretat-gestio-ambiental.md)
 
