@@ -1,6 +1,7 @@
-# BL2. Infraestructura física
+# CFGM SMX · 0225 Xarxes Locals**
 
-**CFGM SMX · 0225 Xarxes Locals**
+## BL2. Infraestructura física
+
 
 ## Índex
 
