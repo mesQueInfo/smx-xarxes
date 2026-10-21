@@ -10,7 +10,7 @@ Aquest bloc teòric dona compliment directe al **Resultat d'Aprenentatge 6 (RA6)
 ### Marcs Legals de Referència:
 * **Llei 31/1995**, de Prevenció de Riscos Laborals.
 * **RD 486/1997**, sobre disposicions mínimes de seguretat i salut als llocs de treball.
-* **RD 488/1997**, sobre disposicions mínimes relogioses a treball amb equips que inclouen pantalles de visualització.
+* **RD 488/1997**, sobre disposicions mínimes de seguretat i salut relatives al treball amb equips que inclouen pantalles de visualització.
 * **RD 110/2015**, sobre residus d'aparells elèctrics i electrònics (RAEE).
 
 ---
