@@ -2,7 +2,7 @@
 
 **Mòdul Professional:** 0225 - Xarxes Locals  
 **Cicle Formatiu:** SMX (Sistemes Microinformàtics i Xarxes)  
-**Bloc Temàtic:** Bloc 2
+**Bloc Temàtic:** Bloc 2 - Infraestructura física
 
 ---
 
