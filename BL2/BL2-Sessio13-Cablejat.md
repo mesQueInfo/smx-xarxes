@@ -27,7 +27,7 @@ El cable de parell trenat consta de parells de fils de coure aïllats i trenats 
 * **UTP (Unshielded Twisted Pair):** Parell trenat sense apantallar. És el més econòmic i utilitzat en entorns d'oficina estàndard.
 * **FTP / Foiled Twisted Pair (F/UTP):** Porta una pantalla d'alumini global que envolta tots els parells per protegir contra interferències exteriors.
 * **STP (Shielded Twisted Pair):** Cada parell trenat disposa d'una malla de protecció individual.
-* **SFTP / S/FTP (Screened Foiled Twisted Pair):** Disposa d'un apantallament individual per parell i una malla o pantalla global externa.
+* **SFTP / S/FTP (Shielded Foiled Twisted Pair):** Disposa d'un apantallament individual per parell i una malla o pantalla global externa.
 
 ### 2.2 Categories de cables de coure
 
