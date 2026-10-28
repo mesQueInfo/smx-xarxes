@@ -12,21 +12,21 @@ En l'àmbit de les xarxes locals (LAN), la infraestructura de cablejat constitue
 
 ### 1.1 Tipus de medis de transmissió
 
-1. **Cablejat de parell trencat (Twisted Pair):** El medi més comú en xarxes d'àrea local.
+1. **Cablejat de parell trenat (Twisted Pair):** El medi més comú en xarxes d'àrea local.
 2. **Fibra òptica:** Utilitzada principalment per a grans distàncies o connexions d'alta velocitat (interconnexió d'edificis o *backbones*).
 3. **Cable coaxial:** En desús per a xarxes d'àrea local modernes, mantenint-se en aplicacions específiques (TV per cable, connexions d'antena).
 
 ---
 
-## 2. Cablejat de Parell Trencat
+## 2. Cablejat de Parell trenat
 
-El cable de parell trencat consta de parells de fils de coure aïllats i trencats entre si per reduir les interferències electromagnètiques (EMI) i la diafonia (*crosstalk*).
+El cable de parell trenat consta de parells de fils de coure aïllats i trenats entre si per reduir les interferències electromagnètiques (EMI) i la diafonia (*crosstalk*).
 
 ### 2.1 Tipologies d'apantallament
 
-* **UTP (Unshielded Twisted Pair):** Parell trencat sense apantallar. És el més econòmic i utilitzat en entorns d'oficina estàndard.
+* **UTP (Unshielded Twisted Pair):** Parell trenat sense apantallar. És el més econòmic i utilitzat en entorns d'oficina estàndard.
 * **FTP / Foiled Twisted Pair (F/UTP):** Porta una pantalla d'alumini global que envolta tots els parells per protegir contra interferències exteriors.
-* **STP (Shielded Twisted Pair):** Cada parell trencat disposa d'una malla de protecció individual.
+* **STP (Shielded Twisted Pair):** Cada parell trenat disposa d'una malla de protecció individual.
 * **SFTP / S/FTP (Screened Foiled Twisted Pair):** Disposa d'un apantallament individual per parell i una malla o pantalla global externa.
 
 ### 2.2 Categories de cables de coure
