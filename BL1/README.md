@@ -1,6 +1,10 @@
-# TEORIA BL1. El Camp d'entrenament
 
-**CFGM SMX · 0225 Xarxes Locals**
+
+# CFGM SMX · 0225 Xarxes Locals
+
+[Tornar a Index del Mòdul](../README.md)
+
+## BL1. El Camp d'entrenament
 
 ## Índex
 
