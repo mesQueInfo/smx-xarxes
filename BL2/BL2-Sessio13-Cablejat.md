@@ -1,4 +1,4 @@
-# Sessió 13: Cablejat de Xarxes Locals 
+# Sessió 13: L'anatomia del cable i crimpatge del cable
 
 **Mòdul Professional:** 0225 - Xarxes Locals  
 **Cicle Formatiu:** SMX (Sistemes Microinformàtics i Xarxes)  
